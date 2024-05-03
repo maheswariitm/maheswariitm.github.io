@@ -1,16 +1,26 @@
-### Hi there 👋
+#About me
 
-<!--
-**maheswariitm/maheswariitm** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I work on the following areas
 
-Here are some ideas to get you started:
+- TURBULENT FLUX PARAMETERIZATION IN OCEAN and COUPLED MODELS
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- DIURNAL CYCLE IN THE OCEAN AND ITS IMPACT ON THE ATMOSPHERE
+
+- OBSERVING SYSTEM EXPERIMENTS USING COUPLED/OCEAN MODELS
+
+- MONSOON VARIABILITY & ITS DRIVERS 
+
+- OPERATIONAL SEASONAL PREDICTION 
+
+I am interested in 
+
+- PARAMETERIZATION OF WIND-WAVE-CURRENT INTERACTION
+
+- USE OF AI/ML IN OCEAN FLUX AND MIXING PARAMETERIZATIONS
+
+Reach me at
+- ☏ (+91)2025904306
+- ✉ maheswar@tropmet.res.in
+
+
+
