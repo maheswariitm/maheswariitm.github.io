@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF Navigation</title>
+    <title>PDF Viewer</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
             margin: 0;
             padding: 0;
             background-color: #f4f4f9;
@@ -15,27 +14,41 @@
         }
         .container {
             max-width: 800px;
-            margin: 20px auto;
+            margin: 40px auto;
             padding: 20px;
             background: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
         canvas {
+            margin: 20px 0;
             width: 100%;
             border: 1px solid #ddd;
+            border-radius: 4px;
         }
-        button {
-            padding: 10px 20px;
+        button, a {
+            display: inline-block;
+            padding: 10px 15px;
             margin: 10px;
             background-color: #3498db;
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            text-decoration: none;
         }
-        button:hover {
+        button:disabled {
+            background-color: #95a5a6;
+            cursor: not-allowed;
+        }
+        button:hover:not(:disabled), a:hover {
             background-color: #2980b9;
+        }
+        #loading {
+            font-size: 16px;
+            color: #888;
+            display: none;
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
@@ -43,17 +56,18 @@
 <body>
 
     <div class="container">
-        <a href="index.html" class="btn btn-primary btn-md">Home</a>
-        <h2>My Recent Work</h2>
+        <a href="index.html" class="btn">Home</a>
+        <h1>PDF Viewer</h1>
+        <div id="loading">Loading...</div>
         <canvas id="pdf-canvas"></canvas>
         <div>
-            <button id="prev">Previous Page</button>
-            <button id="next">Next Page</button>
+            <button id="prev" disabled>Previous Page</button>
+            <button id="next" disabled>Next Page</button>
         </div>
     </div>
 
     <script>
-        const url = 'https://drive.google.com/uc?export=download&id=1BZB0-eCOPPIqW7NuufTFUsqaC6lMn8rV'; // Replace with your file ID
+        const url = 'https://your-pdf-hosting-url-here.com/yourfile.pdf'; // Replace with your PDF file URL
 
         let currentPage = 1;
         let pdfDoc = null;
@@ -62,32 +76,51 @@
         const canvas = document.getElementById('pdf-canvas');
         const ctx = canvas.getContext('2d');
 
-        // Load PDF.js
-        pdfjsLib.getDocument(url).promise.then((pdf) => {
-            pdfDoc = pdf;
-            renderPage(currentPage);
-        });
+        const prevButton = document.getElementById('prev');
+        const nextButton = document.getElementById('next');
+        const loadingIndicator = document.getElementById('loading');
+
+        // Load the PDF document
+        pdfjsLib.getDocument(url).promise
+            .then((pdf) => {
+                pdfDoc = pdf;
+                document.getElementById('next').disabled = pdf.numPages === 1; // Disable next if single-page PDF
+                renderPage(currentPage);
+            })
+            .catch((error) => {
+                console.error('Error loading PDF:', error);
+                alert('Failed to load PDF. Please try again later.');
+            });
 
         function renderPage(num) {
             pageRendering = true;
+            loadingIndicator.style.display = 'block';
+
+            // Get page
             pdfDoc.getPage(num).then((page) => {
-                const viewport = page.getViewport({ scale: 1 });
+                const scale = 1.5; // Adjust the scale for better quality
+                const viewport = page.getViewport({ scale: scale });
                 canvas.height = viewport.height;
                 canvas.width = viewport.width;
 
+                // Render page
                 const renderContext = {
                     canvasContext: ctx,
                     viewport: viewport
                 };
-
                 page.render(renderContext).promise.then(() => {
                     pageRendering = false;
+                    loadingIndicator.style.display = 'none';
+
                     if (pageNumPending !== null) {
                         renderPage(pageNumPending);
                         pageNumPending = null;
                     }
                 });
             });
+
+            // Update button states
+            updateButtonState();
         }
 
         function queueRenderPage(num) {
@@ -98,16 +131,32 @@
             }
         }
 
-        // Navigation Buttons
-        document.getElementById('next').addEventListener('click', () => {
+        function updateButtonState() {
+            prevButton.disabled = currentPage === 1;
+            nextButton.disabled = currentPage === pdfDoc.numPages;
+        }
+
+        // Navigation button event listeners
+        nextButton.addEventListener('click', () => {
             if (currentPage < pdfDoc.numPages) {
                 currentPage++;
                 queueRenderPage(currentPage);
             }
         });
 
-        document.getElementById('prev').addEventListener('click', () => {
+        prevButton.addEventListener('click', () => {
             if (currentPage > 1) {
+                currentPage--;
+                queueRenderPage(currentPage);
+            }
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowRight' && currentPage < pdfDoc.numPages) {
+                currentPage++;
+                queueRenderPage(currentPage);
+            } else if (event.key === 'ArrowLeft' && currentPage > 1) {
                 currentPage--;
                 queueRenderPage(currentPage);
             }
