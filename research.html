@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>PDF Navigation</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,30 +13,6 @@
             background-color: #f4f4f9;
             color: #333;
         }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background: #444;
-            padding: 10px 0;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            padding: 10px 20px;
-            background: #555;
-            border-radius: 5px;
-            transition: background 0.3s ease;
-        }
-        nav a:hover {
-            background: #666;
-        }
         .container {
             max-width: 800px;
             margin: 20px auto;
@@ -45,35 +21,97 @@
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        h1, h2 {
-            color: #444;
-        }
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        iframe {
+        canvas {
             width: 100%;
-            height: 500px;
+            border: 1px solid #ddd;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #3498db;
+            color: white;
             border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2980b9;
         }
     </style>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
 </head>
 <body>
-    
- 
+
     <div class="container">
-        <a href="index.html" class="btn btn-primary btn-md">Home</a>
-        <section id="research-highlights">
-            <h2>Research Highlights</h2>
-            <p>Here is my latest research presentation. You can view it directly below or download it using the link provided:</p>
-            <iframe src="https://drive.google.com/file/d/1BZB0-eCOPPIqW7NuufTFUsqaC6lMn8rV/preview?usp=sharing" allowfullscreen></iframe>
-            <!-- <p>If you can’t view the presentation, <a href="https://docs.google.com/presentation/d/1zYOyNF-jQfq-JebxG2GmbElgS5VOs_XX/edit?usp=drive_link&ouid=111982555925053836917&rtpof=true&sd=true">click here to download it</a>.</p> -->
-        </section>
+        <h2>Research PDF Viewer</h2>
+        <canvas id="pdf-canvas"></canvas>
+        <div>
+            <button id="prev">Previous Page</button>
+            <button id="next">Next Page</button>
+        </div>
     </div>
+
+    <script>
+        const url = 'https://drive.google.com/uc?export=download&id=1BZB0-eCOPPIqW7NuufTFUsqaC6lMn8rV'; // Replace with your file ID
+
+        let currentPage = 1;
+        let pdfDoc = null;
+        let pageRendering = false;
+        let pageNumPending = null;
+        const canvas = document.getElementById('pdf-canvas');
+        const ctx = canvas.getContext('2d');
+
+        // Load PDF.js
+        pdfjsLib.getDocument(url).promise.then((pdf) => {
+            pdfDoc = pdf;
+            renderPage(currentPage);
+        });
+
+        function renderPage(num) {
+            pageRendering = true;
+            pdfDoc.getPage(num).then((page) => {
+                const viewport = page.getViewport({ scale: 1 });
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+
+                const renderContext = {
+                    canvasContext: ctx,
+                    viewport: viewport
+                };
+
+                page.render(renderContext).promise.then(() => {
+                    pageRendering = false;
+                    if (pageNumPending !== null) {
+                        renderPage(pageNumPending);
+                        pageNumPending = null;
+                    }
+                });
+            });
+        }
+
+        function queueRenderPage(num) {
+            if (pageRendering) {
+                pageNumPending = num;
+            } else {
+                renderPage(num);
+            }
+        }
+
+        // Navigation Buttons
+        document.getElementById('next').addEventListener('click', () => {
+            if (currentPage < pdfDoc.numPages) {
+                currentPage++;
+                queueRenderPage(currentPage);
+            }
+        });
+
+        document.getElementById('prev').addEventListener('click', () => {
+            if (currentPage > 1) {
+                currentPage--;
+                queueRenderPage(currentPage);
+            }
+        });
+    </script>
+
 </body>
 </html>
