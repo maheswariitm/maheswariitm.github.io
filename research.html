@@ -51,28 +51,27 @@
     </style>
 </head>
 <body>
-
-    <h1>Simple PDF Viewer</h1>
-
-    <!-- Home Button -->
     <div class="buttons">
         <a href="index.html">Home</a>
     </div>
+    <h1>My Current Research Highlights</h1>
+
+    <!-- Home Button -->
+   
 
     <!-- PDF Viewer -->
     <iframe id="pdf-viewer" src="https://drive.google.com/file/d/1BZB0-eCOPPIqW7NuufTFUsqaC6lMn8rV/preview?usp=sharing" title="PDF Viewer"></iframe>
 
     <!-- Scrolling Buttons -->
-    <div class="buttons">
-        <button onclick="scrollPDF(-1)">Scroll Up</button>
-        <button onclick="scrollPDF(1)">Scroll Down</button>
-    </div>
+    <!-- <div class="buttons">
+        <button onclick="scrollPage(-1)">Scroll Up</button>
+        <button onclick="scrollPage(1)">Scroll Down</button>
+    </div> -->
 
     <script>
-        // Function to scroll the iframe
-        function scrollPDF(direction) {
-            const iframe = document.getElementById('pdf-viewer');
-            iframe.contentWindow.scrollBy(0, direction * 100); // Adjust the scrolling distance as needed
+        // Function to scroll the page
+        function scrollPage(direction) {
+            window.scrollBy(0, direction * 200); // Scrolls the page up or down by 200 pixels
         }
     </script>
 
