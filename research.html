@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF Viewer</title>
+    <title>Simple PDF Viewer</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,155 +11,69 @@
             padding: 0;
             background-color: #f4f4f9;
             color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        canvas {
+        h1 {
             margin: 20px 0;
-            width: 100%;
-            border: 1px solid #ddd;
-            border-radius: 4px;
         }
-        button, a {
-            display: inline-block;
+        iframe {
+            width: 90%;
+            height: 80vh;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .buttons {
+            margin: 10px 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        a, button {
             padding: 10px 15px;
-            margin: 10px;
             background-color: #3498db;
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             text-decoration: none;
+            font-size: 16px;
+        }
+        a:hover, button:hover {
+            background-color: #2980b9;
         }
         button:disabled {
             background-color: #95a5a6;
             cursor: not-allowed;
         }
-        button:hover:not(:disabled), a:hover {
-            background-color: #2980b9;
-        }
-        #loading {
-            font-size: 16px;
-            color: #888;
-            display: none;
-        }
     </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
 </head>
 <body>
 
-    <div class="container">
-        <a href="index.html" class="btn">Home</a>
-        <h1>PDF Viewer</h1>
-        <div id="loading">Loading...</div>
-        <canvas id="pdf-canvas"></canvas>
-        <div>
-            <button id="prev" disabled>Previous Page</button>
-            <button id="next" disabled>Next Page</button>
-        </div>
+    <h1>Simple PDF Viewer</h1>
+
+    <!-- Home Button -->
+    <div class="buttons">
+        <a href="index.html">Home</a>
+    </div>
+
+    <!-- PDF Viewer -->
+    <iframe id="pdf-viewer" src="https://drive.google.com/file/d/1BZB0-eCOPPIqW7NuufTFUsqaC6lMn8rV/preview?usp=sharing" title="PDF Viewer"></iframe>
+
+    <!-- Scrolling Buttons -->
+    <div class="buttons">
+        <button onclick="scrollPDF(-1)">Scroll Up</button>
+        <button onclick="scrollPDF(1)">Scroll Down</button>
     </div>
 
     <script>
-        const url = 'https://www.dropbox.com/scl/fi/5pb3iwrqcsh0dv5ghcnzl/2024_Indian_Monsoon_Maheswar_Pradhan.pdf?raw=1';
-        let currentPage = 1;
-        let pdfDoc = null;
-        let pageRendering = false;
-        let pageNumPending = null;
-        const canvas = document.getElementById('pdf-canvas');
-        const ctx = canvas.getContext('2d');
-
-        const prevButton = document.getElementById('prev');
-        const nextButton = document.getElementById('next');
-        const loadingIndicator = document.getElementById('loading');
-
-        // Load the PDF document
-        pdfjsLib.getDocument(url).promise
-            .then((pdf) => {
-                pdfDoc = pdf;
-                document.getElementById('next').disabled = pdf.numPages === 1; // Disable next if single-page PDF
-                renderPage(currentPage);
-            })
-            .catch((error) => {
-                console.error('Error loading PDF:', error);
-                alert('Failed to load PDF. Please try again later.');
-            });
-
-        function renderPage(num) {
-            pageRendering = true;
-            loadingIndicator.style.display = 'block';
-
-            // Get page
-            pdfDoc.getPage(num).then((page) => {
-                const scale = 1.5; // Adjust the scale for better quality
-                const viewport = page.getViewport({ scale: scale });
-                canvas.height = viewport.height;
-                canvas.width = viewport.width;
-
-                // Render page
-                const renderContext = {
-                    canvasContext: ctx,
-                    viewport: viewport
-                };
-                page.render(renderContext).promise.then(() => {
-                    pageRendering = false;
-                    loadingIndicator.style.display = 'none';
-
-                    if (pageNumPending !== null) {
-                        renderPage(pageNumPending);
-                        pageNumPending = null;
-                    }
-                });
-            });
-
-            // Update button states
-            updateButtonState();
+        // Function to scroll the iframe
+        function scrollPDF(direction) {
+            const iframe = document.getElementById('pdf-viewer');
+            iframe.contentWindow.scrollBy(0, direction * 100); // Adjust the scrolling distance as needed
         }
-
-        function queueRenderPage(num) {
-            if (pageRendering) {
-                pageNumPending = num;
-            } else {
-                renderPage(num);
-            }
-        }
-
-        function updateButtonState() {
-            prevButton.disabled = currentPage === 1;
-            nextButton.disabled = currentPage === pdfDoc.numPages;
-        }
-
-        // Navigation button event listeners
-        nextButton.addEventListener('click', () => {
-            if (currentPage < pdfDoc.numPages) {
-                currentPage++;
-                queueRenderPage(currentPage);
-            }
-        });
-
-        prevButton.addEventListener('click', () => {
-            if (currentPage > 1) {
-                currentPage--;
-                queueRenderPage(currentPage);
-            }
-        });
-
-        // Keyboard navigation
-        document.addEventListener('keydown', (event) => {
-            if (event.key === 'ArrowRight' && currentPage < pdfDoc.numPages) {
-                currentPage++;
-                queueRenderPage(currentPage);
-            } else if (event.key === 'ArrowLeft' && currentPage > 1) {
-                currentPage--;
-                queueRenderPage(currentPage);
-            }
-        });
     </script>
 
 </body>
