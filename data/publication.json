@@ -1,67 +1,237 @@
 [
   {
-    "year": 2025,
+    "year": 2026,
     "type": "journal",
-    "authors": "Maurya, R.K.S., Pradhan, M., Rao, S.A., Jain, D., Srivastava, A., Pillai, P.A., Kiran, V.G., and Das, R.S.",
-    "title": "Monsoon Low-Pressure Systems in Monsoon Mission Climate Forecast System Version 2",
-    "journal": "International Journal of Climatology",
-    "doi": "https://doi.org/10.1002/joc.8891"
+    "authors": "Srivastava, Ankur, Pradhan, M., Martin, G. M., Ineson, S., & Rao, S. A.",
+    "title": "Role of Westerly Wind Bursts in driving the multi-year negative Indian Ocean Dipole of 2021–2022",
+    "journal": "Mausam, 77(4), 1285–1294",
+    "doi": "https://doi.org/10.54302/mausam.v77i4.7601"
+  },
+  {
+    "year": 2026,
+    "type": "journal",
+    "authors": "Lin Wang, Zizhen Dong, Seok-Woo Son, Peng Hu, Raghavendra Ashrit, Yana Li, Thea Turkington, Hui Su, Donaldi Permana, Fengfei Song, Joseph Basconcillo, Shiromani Jayawardena, Tim Cowan, Rajashree Naha, Vladimir Semenov, Hiroshi G. Takahashi, Maheswar Pradhan",
+    "title": "The 2025 Asian Summer Monsoon: Excessive Rainfall, High-impact Weather, and Climate Extremes",
+    "journal": "Journal of Meteorological Research",
+    "doi": "https://doi.org/10.1007/s13351-026-6228-9"
+  },
+  {
+    "year": 2026,
+    "type": "journal",
+    "authors": "Priyanka C.K, Maheswar Pradhan, Ankur Srivastava, Krishnendu E",
+    "title": "Regional Contrast in Performance and Uncertainty of Bulk Air–Sea Flux Algorithms in the Arabian Sea and Bay of Bengal",
+    "journal": "Regional Studies in Marine Science, 105392",
+    "doi": "https://doi.org/10.1016/j.rsma.2026.105392"
+  },
+  {
+    "year": 2026,
+    "type": "journal",
+    "authors": "McTaggart-Cowan R., Magnusson L., Polichtchouk I., …, Pradhan M., Rath S., Richardson D.S., Separovic L., Reboita M.S., Skok G., Srivastava Ankur, Tolstykh M., … et al.",
+    "title": "WP-MIP: An Artificial Intelligence, Hybrid, and Physically Based Model Intercomparison Project for Weather Prediction",
+    "journal": "Bulletin of the American Meteorological Society",
+    "doi": "https://doi.org/10.1175/BAMS-D-26-0012.1"
+  },
+  {
+    "year": 2026,
+    "type": "journal",
+    "authors": "Pradhan, M., C.K., P., Rao, S.A., Srivastava A., E. K.",
+    "title": "SamudraFlux: leveraging direct flux measurements",
+    "journal": "Theoretical and Applied Climatology, 157, 555",
+    "doi": "https://doi.org/10.1007/s00704-026-06460-z"
+  },
+  {
+    "year": 2026,
+    "type": "report",
+    "authors": "Rao, K.P.C., Kumar, G.K., Subbarao, A.V.M., Dhulipala, R., Kumar, S., Srivastava, A., Pradhan, M., Rao, S.A., Vishnoi, L., Pai, D.S., et al.",
+    "title": "Anticipatory Action and Response Plan for Maharashtra: Managing Agricultural Risks from El Niño-Induced Below-Normal Conditions",
+    "journal": "ICRISAT, Hyderabad, India, in collaboration with ICAR-CRIDA, ILRI, IITM, and IMD",
+    "pdf": "http://oar.icrisat.org/id/eprint/13644"
+  },
+  {
+    "year": 2026,
+    "type": "journal",
+    "authors": "Wang, L., Dong, Z., Cowan, T. et al.",
+    "title": "The 2024 Asian–Australian Monsoon Year: Widespread Extremes with Notable Subseasonal Variability and Socioeconomic Impacts",
+    "journal": "Journal of Meteorological Research, 40, 301–318",
+    "doi": "https://doi.org/10.1007/s13351-026-5262-y"
+  },
+  {
+    "year": 2026,
+    "type": "journal",
+    "authors": "Alone, A., Srivastava, A., Rao, S.A. et al.",
+    "title": "Seasonal forecasts of marine heat waves using Monsoon Mission Climate ForecaSt system",
+    "journal": "Theoretical and Applied Climatology, 157, 274",
+    "doi": "https://doi.org/10.1007/s00704-026-06218-7"
+  },
+  {
+    "year": 2026,
+    "type": "journal",
+    "authors": "Bhat, G. S., Jampana, Venkata, Pattabhi Rama Rao, E., Shiva Prasad, S., Kumar, Suresh, Praveen Kumar, B., Srinivasa Kumar, T., Sengupta, D., Ravichandran, M., Edson, J. B., Farrar, T. J., Rao Suryachandra, A., Maheshwar, Pradhan, Jayakumar, A., Anurose, T. J.",
+    "title": "Year-long eddy covariance surface fluxes from a Bay of Bengal mooring compared with operational monsoon mission models",
+    "journal": "Current Science, 130(5), 415–422",
+    "doi": "https://doi.org/10.18520/cs/v130/i5/415-422"
+  },
+  {
+    "year": 2026,
+    "type": "journal",
+    "authors": "Nellipudi, N. R., Rao, S.A., Jain, D., Pillai, P.A., Srivastava, A., Pradhan, M.",
+    "title": "Seasonal prediction of summer monsoon rainfall over homogeneous regions of India: evolution of monsoon mission coupled climate models",
+    "journal": "Climate Dynamics, 64, 37",
+    "doi": "https://doi.org/10.1007/s00382-025-08004-z"
+  },
+  {
+    "year": 2026,
+    "type": "journal",
+    "authors": "Srivastava, A., Martin, G.M., Pradhan, M., Rao, S.A. and Ineson, S.",
+    "title": "The multi-year negative Indian Ocean Dipole of 2021–2022",
+    "journal": "EGUsphere",
+    "doi": "https://doi.org/10.5194/wcd-7-1-2026"
   },
 
+  {
+    "year": 2025,
+    "type": "journal",
+    "authors": "Pradhan, M., Rao, S.A., Srivastava, A., Ratna, S.B.",
+    "title": "Assessment of Deterministic and Probabilistic Seasonal Prediction Skill of the Indian Summer Monsoon and its Teleconnections",
+    "journal": "CLIVAR Exchanges 84",
+    "doi": "https://doi.org/10.36071/clivar.84.2025"
+  },
   {
     "year": 2025,
     "type": "journal",
     "authors": "Kiran, V.G., Rao, S.A., Pillai, P.A., Maurya, R.K.S., Srivastava, A., and Pradhan, M.",
     "title": "Evidence of the linkage between mesoscale eddy activity in the Bay of Bengal and Indian Summer Monsoon Rainfall",
-    "journal": "Atmospheric Research",
+    "journal": "Atmospheric Research, 108708",
     "doi": "https://doi.org/10.1016/j.atmosres.2025.108708"
   },
-
   {
-    "year": 2024,
+    "year": 2025,
     "type": "journal",
-    "authors": "Pradhan, M., Rao, S.A. and Bhattacharya, A.",
+    "authors": "Suneeth, K. V., P. A. Pillai, S. A. Rao, D. Jain, M. Pradhan, and A. Srivastava",
+    "title": "Assessment of Indian Summer Monsoon in Seasonal Hindcasts From Next-Generation GFDL and IITM Models",
+    "journal": "International Journal of Climatology, e70068",
+    "doi": "https://doi.org/10.1002/joc.70068"
+  },
+  {
+    "year": 2025,
+    "type": "journal",
+    "authors": "Pradhan, M., Rao, S.A., and Bhattacharya, A.",
     "title": "Modelling ocean diurnal cycle and its scale interaction to longer scale climatic variabilities",
-    "journal": "Indian Journal of Geo-Marine Sciences",
+    "journal": "Indian Journal of Geo-Marine Sciences, 53(05), 384–397",
     "doi": "https://doi.org/10.56042/ijms.v53i05.21671"
+  },
+  {
+    "year": 2025,
+    "type": "journal",
+    "authors": "Maurya, R.K.S., Pradhan, M., Rao, S.A., Jain, D., Srivastava, A., Pillai, P.A., Kiran, V.G., and Das, R.S.",
+    "title": "Monsoon Low-Pressure Systems in Monsoon Mission Climate Forecast System Version 2",
+    "journal": "International Journal of Climatology, e8891",
+    "doi": "https://doi.org/10.1002/joc.8891"
+  },
+  {
+    "year": 2025,
+    "type": "report",
+    "authors": "Gill Martin, Pratibha Gautam, Hannah Ellis, Sarah Ineson, Richard Keane, Maheswar Pradhan, José M. Rodriguez, Ankur Srivastava",
+    "title": "D2.2.10 (FY24-25) Understanding processes and identifying drivers of errors in the SASM simulation at a range of timescales",
+    "journal": "January 2025"
   },
 
   {
     "year": 2024,
     "type": "journal",
-    "authors": "Jain, D., Rao, S.A., Dandi, R.A., Pillai, P.A., Srivastava, A., Pradhan, M., and Gangadharan, K.V.",
+    "authors": "Dhage, P.M., Srivastava, A., Rao, S.A., Soni, A., and Pradhan, M.",
+    "title": "Applicability of seasonal forecasts from dynamical models for reservoir management practices",
+    "journal": "MAUSAM, 75(2), 559–572",
+    "doi": "https://doi.org/10.54302/mausam.v75i2.6229"
+  },
+  {
+    "year": 2024,
+    "type": "journal",
+    "authors": "Jain, D., Rao, S. A., Dandi, R. A., Pillai, P. A., Srivastava, A., Pradhan, M., and Gangadharan, K. V.",
     "title": "Monsoon Mission Coupled Forecast System version 2.0: model description and Indian monsoon simulations",
-    "journal": "Geoscientific Model Development",
+    "journal": "Geoscientific Model Development, 17, 709–729",
     "doi": "https://doi.org/10.5194/gmd-17-709-2024"
+  },
+  {
+    "year": 2024,
+    "type": "journal",
+    "authors": "Pradhan, M., Rao, S.A. & Bhattacharya, A.",
+    "title": "Towards a realistic MISO simulation: impact of rectification",
+    "journal": "Climate Dynamics",
+    "doi": "https://doi.org/10.1007/s00382-023-07053-6"
+  },
+  {
+    "year": 2024,
+    "type": "report",
+    "authors": "Maheswar Pradhan, Ankur Srivastava, Suryachandra A. Rao",
+    "title": "Soil Moisture Feedback over Wet vs. Arid Regions of India",
+    "journal": "Research activities in Earth system modeling, Working Group on Numerical Experimentation, Report No. 50, WCRP Report No. 12/2020, WMO, Geneva"
+  },
+  {
+    "year": 2024,
+    "type": "report",
+    "authors": "Ashish Alone, Ankur Srivastava, Maheswar Pradhan",
+    "title": "Enhancing Extreme Rainfall Forecasting Through Machine Learning Techniques",
+    "journal": "Research activities in Earth system modeling, Working Group on Numerical Experimentation, Report No. 50, WCRP Report No. 12/2020, WMO, Geneva"
+  },
+  {
+    "year": 2024,
+    "type": "thesis",
+    "authors": "Pradhan, M.",
+    "title": "Improving Air-Sea Interaction in Coupled Models",
+    "journal": "Ph.D Thesis, The Interdisciplinary Programme (IDP) in Climate Studies, Indian Institute of Technology Bombay, Mumbai, India"
   },
 
   {
     "year": 2023,
     "type": "journal",
-    "authors": "Das, R.S., Rao, S.A., Pillai, P.A., Pradhan, M. and Srivastava, A.",
+    "authors": "Das, R.S., Rao, S.A., Pillai, P.A. et al.",
     "title": "Role of south-west Indian orography in modulating large-scale monsoon circulation",
-    "journal": "Theoretical and Applied Climatology",
+    "journal": "Theoretical and Applied Climatology, 154, 1277–1290",
     "doi": "https://doi.org/10.1007/s00704-023-04597-9"
   },
 
   {
     "year": 2022,
     "type": "journal",
+    "authors": "Pillai, P. A., Rao, S. A., V. Gangadharan, K., Pradhan, M., Srivastava, A., & Jain, D. K.",
+    "title": "Impact of reduced ENSO variability and amplitude on ISMR prediction in the long-lead forecasts of monsoon mission CFS",
+    "journal": "International Journal of Climatology, 42(16), 9166–9181",
+    "doi": "https://doi.org/10.1002/joc.7809"
+  },
+  {
+    "year": 2022,
+    "type": "journal",
+    "authors": "Das, Renu S., Rao, Suryachandra A., Pillai, P.A., Srivastava, Ankur, Pradhan, M., Dandi, R.A.",
+    "title": "Why coupled general circulation models overestimate the ENSO and Indian Summer Monsoon Rainfall (ISMR) relationship?",
+    "journal": "Climate Dynamics, 1–17",
+    "doi": "https://doi.org/10.1007/s00382-022-06253-w"
+  },
+  {
+    "year": 2022,
+    "type": "journal",
+    "authors": "Gade, S.V., Sreenivas, P., Rao, Suryachandra A., Srivastava, Ankur, Pradhan, M.",
+    "title": "Impact of the Ensemble Kalman Filter based Coupled Data Assimilation System on Seasonal Prediction of Indian Summer Monsoon Rainfall",
+    "journal": "Geophysical Research Letters, 49, e2021GL097184",
+    "doi": "https://doi.org/10.1029/2021GL097184"
+  },
+  {
+    "year": 2022,
+    "type": "journal",
     "authors": "Pradhan, M., Rao, S.A., Bhattacharya, A. and Balasubramanian, S.",
     "title": "Improvements in Diurnal Cycle and its Impact on Seasonal Mean by Incorporating COARE flux Algorithm in CFS",
-    "journal": "Frontiers in Climate",
+    "journal": "Frontiers in Climate, 3, 792980",
     "doi": "https://doi.org/10.3389/fclim.2021.792980"
   },
 
   {
     "year": 2021,
     "type": "journal",
-    "authors": "Pradhan, M., Rao, S.A., Doi, T., Pillai, P.A., Srivastava, A. and Behera, S.",
-    "title": "Comparison of MMCFS and SINTEX-F2 for seasonal prediction of Indian summer monsoon rainfall",
-    "journal": "International Journal of Climatology",
-    "doi": "https://doi.org/10.1002/joc.7169"
+    "authors": "Mohanty, M.R., Pradhan, M., Maurya, R.K.S. et al.",
+    "title": "Evaluation of state-of-the-art GCMs in simulating Indian summer monsoon rainfall",
+    "journal": "Meteorology and Atmospheric Physics, 133, 1429–1445",
+    "doi": "https://doi.org/10.1007/s00703-021-00818-w"
   },
-
   {
     "year": 2021,
     "type": "journal",
@@ -69,6 +239,45 @@
     "title": "Are ocean-moored buoys redundant for prediction of Indian monsoon?",
     "journal": "Meteorology and Atmospheric Physics",
     "doi": "https://doi.org/10.1007/s00703-021-00792-3"
+  },
+  {
+    "year": 2021,
+    "type": "journal",
+    "authors": "Pradhan, M., Rao, S. A., Doi, T., Pillai, P. A., Srivastava, A., & Behera, S.",
+    "title": "Comparison of MMCFS and SINTEX-F2 for seasonal prediction of Indian summer monsoon rainfall",
+    "journal": "International Journal of Climatology, 1–25",
+    "doi": "https://doi.org/10.1002/joc.7169"
+  },
+  {
+    "year": 2021,
+    "type": "journal",
+    "authors": "Amat, H.B., Pradhan, M., Tejavath, C.T., Dey, Avijit, Rao, Suryachandra A., Sahai, A.K., Ashok, K.",
+    "title": "Value addition to forecasting: towards Kharif rice crop predictability through local climate variations associated with Indo-Pacific climate drivers",
+    "journal": "Theoretical and Applied Climatology, 144, 917–929",
+    "doi": "https://doi.org/10.1007/s00704-021-03572-6"
+  },
+  {
+    "year": 2021,
+    "type": "journal",
+    "authors": "Pillai, P.A., Rao, Suryachandra A., Srivastava, Ankur, Dandi, R.A., Pradhan, M., Das, Renu S.",
+    "title": "Impact of the tropical Pacific SST biases on the simulation and prediction of Indian summer monsoon rainfall in CFSv2, ECMWF-System4, and NMME models",
+    "journal": "Climate Dynamics, 56, 1699–1715",
+    "doi": "https://doi.org/10.1007/s00382-020-05555-1"
+  },
+  {
+    "year": 2021,
+    "type": "journal",
+    "authors": "Pradhan, M., Rao, Suryachandra A., Srivastava, Ankur.",
+    "title": "Factors responsible for consecutive deficit Indian monsoons during 2014 and 2015",
+    "journal": "Theoretical and Applied Climatology, 143, 1473–1486",
+    "doi": "https://doi.org/10.1007/s00704-020-03486-9"
+  },
+  {
+    "year": 2021,
+    "type": "report",
+    "authors": "US CLIVAR Workshop",
+    "title": "Tropical Pacific Observing Needs to Advance Process Understanding and Representation in Models Workshop",
+    "journal": "Workshop Report"
   },
 
   {
@@ -83,10 +292,32 @@
   {
     "year": 2019,
     "type": "journal",
+    "authors": "Rao, S.A., Goswami, B.N., Sahai, A.K., Rajagopal, E.N., Mukhopadhyay, P., Rajeevan, M., Nayak, S., Rathore, L.S., Shenoi, S.S.C., Ramesh, K.J. and Nanjundiah, R.",
+    "title": "Monsoon Mission: A targeted activity to improve monsoon prediction across scales",
+    "journal": "Bulletin of the American Meteorological Society",
+    "doi": "https://doi.org/10.1175/BAMS-D-17-0330.1"
+  },
+  {
+    "year": 2019,
+    "type": "journal",
     "authors": "Krishna, R.P.M., Rao, S.A., Srivastava, A., Kottu, H.P., Pradhan, M., Pillai, P., Dandi, R.A. and Sabeerali, C.T.",
     "title": "Impact of convective parameterization on the seasonal prediction skill of Indian summer monsoon",
     "journal": "Climate Dynamics",
     "doi": "https://doi.org/10.1007/s00382-019-04921-y"
+  },
+  {
+    "year": 2019,
+    "type": "journal",
+    "authors": "Rao, S.A., Pillai, P.A., Pradhan, M. and Srivastava, A.",
+    "title": "Seasonal prediction of Indian summer monsoon in India: The past, the present and the future",
+    "journal": "MAUSAM, 70(2), 265–276"
+  },
+  {
+    "year": 2019,
+    "type": "report",
+    "authors": "Gill Martin, Ankur Srivastava, Susmitha Joseph, Rajib Chattopadhay, José Rodriguez, Michael Vellinga, Richard Levine, Sean Milton, Maheswar Pradhan, Suryachandra A. Rao",
+    "title": "Progress report on common and differing characteristics between modelling systems, with priority for future process study",
+    "journal": "WCSSP-India Deliverable D2.1.1, July 2019"
   },
 
   {
@@ -94,49 +325,72 @@
     "type": "journal",
     "authors": "Pillai, P.A., Rao, S.A., Ramu, D.A., Pradhan, M. and George, G.",
     "title": "Seasonal prediction skill of Indian summer monsoon rainfall in NMME models and monsoon mission CFSv2",
-    "journal": "International Journal of Climatology",
+    "journal": "International Journal of Climatology, 38, e847–e861",
     "doi": "https://doi.org/10.1002/joc.5413"
   },
 
   {
     "year": 2017,
     "type": "journal",
+    "authors": "Srivastava, A., Pradhan, M., Goswami, B.N. and Rao, S.A.",
+    "title": "Regime shift of Indian summer monsoon rainfall to a persistent arid state: external forcing versus internal variability",
+    "journal": "Meteorology and Atmospheric Physics, 131(2), 211–224",
+    "doi": "https://doi.org/10.1007/s00703-017-0565-2"
+  },
+  {
+    "year": 2017,
+    "type": "journal",
     "authors": "Pradhan, M., Rao, A.S., Srivastava, A., Dakate, A., Salunke, K. and Shameera, K.S.",
     "title": "Prediction of Indian summer-monsoon onset variability: A season in advance",
-    "journal": "Scientific Reports",
+    "journal": "Scientific Reports, 7(1), 14229",
     "doi": "https://doi.org/10.1038/s41598-017-12594-y"
   },
-
   {
-    "year": 2024,
+    "year": 2017,
+    "type": "journal",
+    "authors": "Srivastava, A., Rao, S.A., Rao, D.N., George, G. and Pradhan, M.",
+    "title": "Structure, characteristics, and simulation of monsoon low-pressure systems in CFS v2 coupled model",
+    "journal": "Journal of Geophysical Research: Oceans, 122(8), 6394–6415",
+    "doi": "https://doi.org/10.1002/2016JC012322"
+  },
+  {
+    "year": 2017,
+    "type": "journal",
+    "authors": "Pradhan, M., Yadav, R.K., Ramu Dandi, A., Srivastava, A., Phani, M.K. and Rao, S.A.",
+    "title": "Shift in MONSOON–SST teleconnections in the tropical Indian Ocean and ENSEMBLES climate models' fidelity in its simulation",
+    "journal": "International Journal of Climatology, 37(5), 2280–2294",
+    "doi": "https://doi.org/10.1002/joc.4841"
+  },
+  {
+    "year": 2017,
+    "type": "journal",
+    "authors": "Ramu, D.A., Rao, S.A., Pillai, P.A., Pradhan, M., George, G., Rao, D.N., Mahapatra, S., Pai, D.S. and Rajeevan, M.",
+    "title": "Prediction of seasonal summer monsoon rainfall over homogenous regions of India using dynamical prediction system",
+    "journal": "Journal of Hydrology, 546, 103–112",
+    "doi": "https://doi.org/10.1016/j.jhydrol.2017.01.010"
+  },
+  {
+    "year": 2017,
+    "type": "journal",
+    "authors": "Pai, D.S., Rao, A.S., Senroy, S., Pradhan, M., Pillai, P.A. and Rajeevan, M.",
+    "title": "Performance of the operational and experimental long-range forecasts for the 2015 southwest monsoon rainfall",
+    "journal": "Current Science, 112, 68–75",
+    "doi": "https://doi.org/10.18520/cs/v112/i01/68-75"
+  },
+  {
+    "year": 2017,
     "type": "report",
-    "authors": "Pradhan, M.",
-    "title": "Improving Air-Sea Interaction in Coupled Models",
-    "journal": "PhD Thesis, Indian Institute of Technology Bombay",
-    "pdf": "https://tropmet-my.sharepoint.com/"
+    "authors": "D.S. Pai, O. P. Sreejith, A. Suryachandra Rao, Arti Bandgar, Kailas Sonawane, Madhuri Musale, Ankur Srivastava, Maheswar Pradhan, Gibies George and Ashish Dhakate",
+    "title": "Operational and experimental long-range forecasts, Monsoon 2016",
+    "journal": "Report"
   },
 
   {
-    "year": 2024,
+    "year": 2015,
     "type": "report",
-    "authors": "Pradhan, M., Srivastava, A. and Rao, S.A.",
-    "title": "Soil Moisture Feedback over Wet vs. Arid Regions of India",
-    "journal": "WCRP / WGNE Report"
-  },
-
-  {
-    "year": 2023,
-    "type": "conference",
-    "authors": "Pradhan, M.",
-    "title": "Improving Thermodynamic Air-Sea Interaction in Coupled Model: Impact on Monsoon Simulation",
-    "journal": "WCRP Open Science Conference, Kigali, Rwanda"
-  },
-
-  {
-    "year": 2024,
-    "type": "conference",
-    "authors": "Pradhan, M.",
-    "title": "Ocean Diurnal Cycle and its Rectification into Longer Time Scale: Impact on Tropical Variabilities",
-    "journal": "Ocean Predict-2024, Paris"
+    "authors": "Mujumdar, M., Gnanaseelan, C. and Rajeevan, M.",
+    "title": "A Research Report on the 2015 Southwest Monsoon",
+    "journal": "ESSO/IITM/SERP/SR/02 (2015)/185",
+    "pdf": "http://www.tropmet.res.in/"
   }
 ]
