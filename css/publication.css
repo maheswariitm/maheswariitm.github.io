@@ -59,6 +59,50 @@ h1 {
     margin-top: 5px;
 }
 
+/* ---------------------------------
+   NEW / LATEST PUBLICATION TAG
+   --------------------------------- */
+
+.latest-tag {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 3px 9px;
+
+    font-size: 0.65rem;
+    font-weight: 700;
+    line-height: 1.2;
+
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    background: #dc3545;
+
+    border-radius: 12px;
+    vertical-align: middle;
+
+    box-shadow: 0 2px 5px rgba(220, 53, 69, 0.25);
+}
+
+/* Subtle animation for the NEW tag */
+.latest-tag {
+    animation: latestPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes latestPulse {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .publication-journal {
     font-size: 15px;
     font-style: italic;
@@ -73,6 +117,11 @@ h1 {
 .filter-btn {
     margin: 3px;
 }
+
+
+/* ---------------------------------
+   MOBILE
+   --------------------------------- */
 
 @media (max-width: 768px) {
 
@@ -95,6 +144,12 @@ h1 {
 
     .year-title {
         font-size: 26px;
+    }
+
+    .latest-tag {
+        font-size: 0.58rem;
+        padding: 3px 7px;
+        margin-left: 6px;
     }
 
 }
