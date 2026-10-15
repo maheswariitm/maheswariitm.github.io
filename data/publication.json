@@ -1,0 +1,142 @@
+[
+  {
+    "year": 2025,
+    "type": "journal",
+    "authors": "Maurya, R.K.S., Pradhan, M., Rao, S.A., Jain, D., Srivastava, A., Pillai, P.A., Kiran, V.G., and Das, R.S.",
+    "title": "Monsoon Low-Pressure Systems in Monsoon Mission Climate Forecast System Version 2",
+    "journal": "International Journal of Climatology",
+    "doi": "https://doi.org/10.1002/joc.8891"
+  },
+
+  {
+    "year": 2025,
+    "type": "journal",
+    "authors": "Kiran, V.G., Rao, S.A., Pillai, P.A., Maurya, R.K.S., Srivastava, A., and Pradhan, M.",
+    "title": "Evidence of the linkage between mesoscale eddy activity in the Bay of Bengal and Indian Summer Monsoon Rainfall",
+    "journal": "Atmospheric Research",
+    "doi": "https://doi.org/10.1016/j.atmosres.2025.108708"
+  },
+
+  {
+    "year": 2024,
+    "type": "journal",
+    "authors": "Pradhan, M., Rao, S.A. and Bhattacharya, A.",
+    "title": "Modelling ocean diurnal cycle and its scale interaction to longer scale climatic variabilities",
+    "journal": "Indian Journal of Geo-Marine Sciences",
+    "doi": "https://doi.org/10.56042/ijms.v53i05.21671"
+  },
+
+  {
+    "year": 2024,
+    "type": "journal",
+    "authors": "Jain, D., Rao, S.A., Dandi, R.A., Pillai, P.A., Srivastava, A., Pradhan, M., and Gangadharan, K.V.",
+    "title": "Monsoon Mission Coupled Forecast System version 2.0: model description and Indian monsoon simulations",
+    "journal": "Geoscientific Model Development",
+    "doi": "https://doi.org/10.5194/gmd-17-709-2024"
+  },
+
+  {
+    "year": 2023,
+    "type": "journal",
+    "authors": "Das, R.S., Rao, S.A., Pillai, P.A., Pradhan, M. and Srivastava, A.",
+    "title": "Role of south-west Indian orography in modulating large-scale monsoon circulation",
+    "journal": "Theoretical and Applied Climatology",
+    "doi": "https://doi.org/10.1007/s00704-023-04597-9"
+  },
+
+  {
+    "year": 2022,
+    "type": "journal",
+    "authors": "Pradhan, M., Rao, S.A., Bhattacharya, A. and Balasubramanian, S.",
+    "title": "Improvements in Diurnal Cycle and its Impact on Seasonal Mean by Incorporating COARE flux Algorithm in CFS",
+    "journal": "Frontiers in Climate",
+    "doi": "https://doi.org/10.3389/fclim.2021.792980"
+  },
+
+  {
+    "year": 2021,
+    "type": "journal",
+    "authors": "Pradhan, M., Rao, S.A., Doi, T., Pillai, P.A., Srivastava, A. and Behera, S.",
+    "title": "Comparison of MMCFS and SINTEX-F2 for seasonal prediction of Indian summer monsoon rainfall",
+    "journal": "International Journal of Climatology",
+    "doi": "https://doi.org/10.1002/joc.7169"
+  },
+
+  {
+    "year": 2021,
+    "type": "journal",
+    "authors": "Pradhan, M., Srivastava, A., Rao, S.A., Banerjee, D.S., Chatterjee, A., Francis, P.A., Sreejith, O.P., Gupta, M.D. and Prasad, V.S.",
+    "title": "Are ocean-moored buoys redundant for prediction of Indian monsoon?",
+    "journal": "Meteorology and Atmospheric Physics",
+    "doi": "https://doi.org/10.1007/s00703-021-00792-3"
+  },
+
+  {
+    "year": 2020,
+    "type": "journal",
+    "authors": "Srivastava, A., Rao, S.A., Pradhan, M., Pillai, P.A. and Prasad, V.S.",
+    "title": "Gain of one-month lead time in seasonal prediction of Indian summer monsoon prediction: comparison of initialization strategies",
+    "journal": "Theoretical and Applied Climatology",
+    "doi": "https://doi.org/10.1007/s00704-020-03470-3"
+  },
+
+  {
+    "year": 2019,
+    "type": "journal",
+    "authors": "Krishna, R.P.M., Rao, S.A., Srivastava, A., Kottu, H.P., Pradhan, M., Pillai, P., Dandi, R.A. and Sabeerali, C.T.",
+    "title": "Impact of convective parameterization on the seasonal prediction skill of Indian summer monsoon",
+    "journal": "Climate Dynamics",
+    "doi": "https://doi.org/10.1007/s00382-019-04921-y"
+  },
+
+  {
+    "year": 2018,
+    "type": "journal",
+    "authors": "Pillai, P.A., Rao, S.A., Ramu, D.A., Pradhan, M. and George, G.",
+    "title": "Seasonal prediction skill of Indian summer monsoon rainfall in NMME models and monsoon mission CFSv2",
+    "journal": "International Journal of Climatology",
+    "doi": "https://doi.org/10.1002/joc.5413"
+  },
+
+  {
+    "year": 2017,
+    "type": "journal",
+    "authors": "Pradhan, M., Rao, A.S., Srivastava, A., Dakate, A., Salunke, K. and Shameera, K.S.",
+    "title": "Prediction of Indian summer-monsoon onset variability: A season in advance",
+    "journal": "Scientific Reports",
+    "doi": "https://doi.org/10.1038/s41598-017-12594-y"
+  },
+
+  {
+    "year": 2024,
+    "type": "report",
+    "authors": "Pradhan, M.",
+    "title": "Improving Air-Sea Interaction in Coupled Models",
+    "journal": "PhD Thesis, Indian Institute of Technology Bombay",
+    "pdf": "https://tropmet-my.sharepoint.com/"
+  },
+
+  {
+    "year": 2024,
+    "type": "report",
+    "authors": "Pradhan, M., Srivastava, A. and Rao, S.A.",
+    "title": "Soil Moisture Feedback over Wet vs. Arid Regions of India",
+    "journal": "WCRP / WGNE Report"
+  },
+
+  {
+    "year": 2023,
+    "type": "conference",
+    "authors": "Pradhan, M.",
+    "title": "Improving Thermodynamic Air-Sea Interaction in Coupled Model: Impact on Monsoon Simulation",
+    "journal": "WCRP Open Science Conference, Kigali, Rwanda"
+  },
+
+  {
+    "year": 2024,
+    "type": "conference",
+    "authors": "Pradhan, M.",
+    "title": "Ocean Diurnal Cycle and its Rectification into Longer Time Scale: Impact on Tropical Variabilities",
+    "journal": "Ocean Predict-2024, Paris"
+  }
+]
