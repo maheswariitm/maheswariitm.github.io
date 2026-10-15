@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   // Load publication data
-  fetch("data/publications.json")
+  fetch("data/publication.json")
     .then(response => response.json())
     .then(data => {
 
