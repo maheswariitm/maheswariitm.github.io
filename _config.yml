@@ -1,0 +1,18 @@
+title: "Dr. Maheswar Pradhan"
+email: "maheswar@tropmet.res.in"
+description: "Climate scientist at IITM Pune studying ocean–atmosphere interaction, coupled climate models and seasonal monsoon prediction."
+baseurl: ""
+url: "https://maheswariitm.github.io"
+profile_url: "https://tropmet.res.in/131-Maheswar%20%20Pradhan-scientist_detail"
+scholar_url: "https://scholar.google.co.in/citations?hl=en&user=F-kWc3IAAAAJ"
+orcid_url: "https://orcid.org/0000-0003-4291-6431"
+cv_url: "https://tropmet-my.sharepoint.com/:b:/g/personal/maheswar_tropmet_onmicrosoft_com/EZIHq7j2_xJDgzwNUTso8GsBVuGFYbaDYEOHE-Ob9c84Tg?e=MLQOl2"
+author:
+  name: "Dr. Maheswar Pradhan"
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+exclude:
+  - index.md

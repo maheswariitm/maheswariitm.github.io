@@ -1,0 +1,21 @@
+{
+  "groupName": "WeMetOcn",
+  "description": "",
+  "aim": "",
+  "activities": [],
+  "_instructions": "Edit this file to maintain the WeMetOcn page. Fill in description and aim. Add activities as objects with title, description, and optional year (or as simple strings). Add member objects with name, role, affiliation, bio, photo, email, and links. Each link uses label and url.",
+  "members": [
+    {
+      "name": "Maheswar Pradhan",
+      "role": "Scientist E · Monsoon Mission Group",
+      "affiliation": "Indian Institute of Tropical Meteorology, Pune",
+      "bio": "Studies ocean–atmosphere interaction, coupled climate models, and seasonal monsoon prediction.",
+      "photo": "",
+      "email": "",
+      "links": [
+        { "label": "Google Scholar", "url": "https://scholar.google.co.in/citations?hl=en&user=F-kWc3IAAAAJ" },
+        { "label": "ORCID", "url": "https://orcid.org/0000-0003-4291-6431" }
+      ]
+    }
+  ]
+}
